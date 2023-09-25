@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Define o caminho para os arquivos Dockerfile
+#DOCKERFILE_PATH="/mnt/c/Users/Richardson/Documents/asa-web-2023"
+
+
+# Constrói o primeiro container (tag c01)
+docker build -t c01 -f Dockerfile.c01 .
+
+# Constrói o segundo container (tag c02)
+docker build -t c02 -f Dockerfile.c02 .
+
+# Constrói o terceiro container (tag c03)
+docker build -t c03 -f Dockerfile.c03
+
+# Constrói o quarto container (tag c04)
+docker build -t c04 -f Dockerfile.proxy .
